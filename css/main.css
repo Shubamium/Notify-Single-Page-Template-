@@ -9,3 +9,31 @@
 body{
     font-family: 'Karma', sans-serif;
 }
+.content-width{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+header{
+    position:fixed;
+    min-width: 100%;
+}
+    header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        min-width: 100vh;
+        min-height: 60px;
+    }
+    .header-item{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: .4em;
+    }
+    .bar{
+        padding-bottom: .4em;
+        min-width: 4em;
+    }
+    .bar:hover{
+        background-color: lightgrey;
+    }
