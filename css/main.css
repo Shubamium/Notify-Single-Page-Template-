@@ -5,12 +5,25 @@
     margin:0%;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Karma', sans-serif;
 }
+.row-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+}
+.pad-80{
+    padding-bottom: 80px;
+}
+
+.text-center{
+    text-align: center;
+}
+
 .content-width{
-    max-width: 1200px;
+    max-width: 1000px;
     margin:  0 auto;
 }
 header{
@@ -42,3 +55,16 @@ header{
 article{
         padding-top: 60px;
 }
+    .foods{
+        margin: 40px;
+        padding-bottom: 50px;
+    }
+  
+    .food h2{
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+   
+    .food > img{
+        width: 100%;
+    }
