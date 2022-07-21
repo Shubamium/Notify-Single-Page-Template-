@@ -21,9 +21,12 @@ body{
 .text-center{
     text-align: center;
 }
+.mh-80{
+    min-height: 80px;
+}
 
 .content-width{
-    max-width: 1000px;
+    max-width: 1100px;
     margin:  0 auto;
 }
 header{
@@ -53,7 +56,7 @@ header{
     }
 
 article{
-        padding-top: 60px;
+        padding-top: 6em;
 }
     .foods{
         margin: 40px;
