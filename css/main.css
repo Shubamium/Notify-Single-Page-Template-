@@ -16,6 +16,7 @@ body{
 header{
     position:fixed;
     min-width: 100%;
+    background-color: #ffffff;
 }
     header > div{
         display: flex;
@@ -37,3 +38,7 @@ header{
     .bar:hover{
         background-color: lightgrey;
     }
+
+article{
+        padding-top: 60px;
+}
