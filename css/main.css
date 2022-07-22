@@ -17,12 +17,27 @@ body{
     gap: 1em;
 }
 
+.row-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
 .pad-80{
     padding-bottom: 80px;
 }
 
 .mar-50{
     margin: 50px 0;
+}
+
+.mar-12{
+    margin:  1.2rem 0;
 }
 
 .italic{
@@ -85,7 +100,7 @@ article{
         margin: 0 40px;
     }
   
-    .food h2, .about-me h2{
+    .food h2, .about-me h2, .footer-item h3{
         font-weight: lighter;
         margin-bottom: 20px;
     }
@@ -127,4 +142,36 @@ article{
     .text-part h3{
         font-size: 1.2rem;
     }
+
+.footer-item-content{
+    display: flex;
+    padding: 1em 1em;
+}
+
+    .footer-item-content img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .footer-item-content:hover{
+     
+        background-color: grey;
+    }
+
+    .blog-post{
+        padding: 0 20px;
+    }
     
+.tag{
+    font-size: .8rem;
+    color: white;
+    background-color: gray;
+    padding: .1rem;
+    line-height: 250%;
+
+}
+
+    .highlighted-tag{
+        background-color: black;
+        font-size: 1rem;
+    }
