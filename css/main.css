@@ -5,20 +5,28 @@
     margin:0%;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Karma', sans-serif;
 }
+
 .row-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1em;
 }
+
 .pad-80{
     padding-bottom: 80px;
 }
+
 .mar-50{
     margin: 50px 0;
+}
+
+.italic{
+    font-style: italic;    
 }
 
 hr{
@@ -41,6 +49,7 @@ hr{
     max-width: 1100px;
     margin:  0 auto;
 }
+
 header{
     position:fixed;
     min-width: 100%;
@@ -53,12 +62,14 @@ header{
         min-width: 100vh;
         min-height: 60px;
     }
+
     .header-item{
         display:flex;
         align-items: center;
         justify-content: center;
         padding-top: .4em;
     }
+
     .bar{
         padding-bottom: .4em;
         min-width: 4em;
@@ -67,15 +78,14 @@ header{
         background-color: lightgrey;
     }
 
-article{
+articles{
         padding-top: 6em;
 }
     .foods{
-        margin: 40px;
-        padding-bottom: 50px;
+        margin: 0 40px;
     }
   
-    .food h2{
+    .food h2, .about-me h2{
         font-weight: lighter;
         margin-bottom: 20px;
     }
@@ -87,21 +97,33 @@ article{
     .food-nav{
         width:max-content;
     }
+
     .food-nav .nav-item{
         align-items: center;
         display: flex;
         justify-content: space-between;
     }
+
     .nav-item li{
         list-style-type: none;
         width:  40px;
         height: 40px;
     }
+
     .nav-item li:hover,.nav-item li:nth-child(2){
         background-color: black;
         color: white;
         cursor: pointer;
     }
+
     .nav-item li:nth-child(2):hover{
         background-color: lightslategray;
+    }
+
+.text-part > *{
+    margin: 1rem 0;
+}
+
+    .text-part h3{
+        font-size: 1.2rem;
     }
