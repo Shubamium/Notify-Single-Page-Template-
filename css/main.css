@@ -91,6 +91,7 @@ header{
     }
     .bar:hover{
         background-color: lightgrey;
+        cursor: pointer;
     }
 
 article{
