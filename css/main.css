@@ -176,3 +176,26 @@ article{
         background-color: black;
         font-size: 1rem;
     }
+
+
+@media screen and (max-width:1400px) {
+    .content-width{
+        max-width: initial;
+    }   
+    .head{
+        min-width: 100%;
+    }
+  
+}
+@media screen and (max-width:800px) {
+    .row-4{
+        grid-template-columns: 1fr;
+    }
+    .row-3{
+        grid-template-columns: 1fr;
+    }
+    .food h2{
+        margin: 0;
+    }
+    
+}
