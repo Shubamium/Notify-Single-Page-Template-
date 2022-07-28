@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
+
      <!--Fixed Navbar-->
      <header>
         <div class="head mh-80 content-width">
-            <div class="bar header-item">
+            <div id="sidebar-open" class="bar header-item">
                 <span class="material-symbols-outlined" style="font-size:30px;">
                     menu
                     </span>
@@ -21,8 +22,18 @@
             <h1 class="header-item">Mail</h1>
         </div>
     </header>
+
+    <!--Toggleable Side Nav-->
+    <nav class="sidenav sidenav-hidden">
+        <ul class="sides">
+            <li id="sidebar-close">Close Menu</li>
+            <li>Food</li>
+            <li>About</li>
+        </ul>
+   </nav>
+   
     <div class="container">
-       
+      
         <article>
             <!--Main Food Display-->
             <div class="foods">
@@ -154,5 +165,6 @@
             </div>
         </footer>
     </div>
+    <script src="nav.js"></script>
 </body>
 </html>

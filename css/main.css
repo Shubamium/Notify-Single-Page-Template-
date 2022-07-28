@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Karma', sans-serif;
+    position: relative;
 }
 
 .row-4{
@@ -184,6 +185,40 @@ article{
     }
 
 
+
+.sidenav{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color:white;
+    z-index: 40;
+    left: 0;
+    transition: all .2s;
+    box-shadow: 2px 0px 10px rgb(85, 85, 85);
+}
+
+.sidenav .sides{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidenav .sides li{
+    width: 100%;
+    padding: 20px;
+    list-style-type: nones;
+    font-size: 1.5rem;
+}
+
+.sidenav .sides li:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.sidenav-hidden{
+    left: -20%;
+    opacity: 0;
+    transition: all .5s;
+}
+
 @media screen and (max-width:1400px) {
     .content-width{
         max-width: initial;
@@ -204,4 +239,8 @@ article{
         margin: 0;
     }
     
+    .food > img:hover{
+        transform: scale(1.03);
+        filter: brightness(.6);
+    }
 }
