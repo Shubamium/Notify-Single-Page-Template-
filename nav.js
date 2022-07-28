@@ -1,7 +1,7 @@
 let closeButton = document.getElementById('sidebar-close'); 
 let openButton = document.getElementById('sidebar-open'); 
 
-let sidebarHideClass = "sidenav-hidden";
+let sidebarShowClass = "sidenav-show";
 
 let sidebar = document.getElementsByClassName('sidenav')[0];
 
@@ -10,12 +10,10 @@ closeButton.addEventListener('click',closeSideNav);
 openButton.addEventListener('click',openSideNav);
 
 function closeSideNav(){
-    //add sidebarHideClass to the sidebar
-    sidebar.classList.add(sidebarHideClass);
+    sidebar.classList.remove(sidebarShowClass);
 }
 
 function openSideNav(){
-    //remove sidebarHideClass to the sidebar
-    sidebar.classList.remove(sidebarHideClass);
+    sidebar.classList.add(sidebarShowClass);
     
 }
